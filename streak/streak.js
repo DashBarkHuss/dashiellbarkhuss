@@ -1,3 +1,4 @@
+
 class Tracker{
     constructor(activity, startDate){
         this.startDate = startDate;
