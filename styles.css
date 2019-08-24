@@ -49,7 +49,9 @@ html, body{
     justify-content: center;
     justify-items: center;
     margin: auto;
-    padding: 0 2% 2% 2%;
+    padding: 0 4% 10% 4%;
+    max-width: 1000px;
+    line-height: 1.3em;
 }
 
 *{
@@ -84,13 +86,15 @@ html, body{
     display: flex;
     justify-content: space-evenly;
     padding: 2%;
-    margin-bottom: 12%;
+    margin-bottom: 5%;
     font-size: 1.2rem;
     background-image: linear-gradient(to right, var(--light-accent-color), var(--light-accent2-color-op));
     box-shadow: 5px 5px 5px var(--shadow-color);;
 }
-.nav-item, a{
+.nav-item a{
     color: #000;
     text-decoration: none;
 }
-
+li {
+    padding-bottom: 1em;
+}
