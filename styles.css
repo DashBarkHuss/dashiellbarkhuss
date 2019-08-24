@@ -7,14 +7,17 @@
     --light-accent-color: #1ca8dc;
     --accent2-color: #5a33f0;
     --light-accent2-color: rgb(156, 130, 248, .2);
+    --light-accent2-color-op: rgb(156, 130, 248);
     
+}
+a{
+    color: var(--light-accent-color);
 }
 
 #title{
     color: var(--light-accent-color);
     text-shadow: 3px 3px 3px var(--shadow-color);
     position: relative;
-    top: 8%;
     left: 50%;
     width: fit-content;
     transform: translateX(-50%);
@@ -35,13 +38,20 @@ html, body{
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: auto;
     grid-gap: 40px;
-    top: 20%;
     position: relative;
     justify-content: center;
     justify-items: center;
     margin: auto;
-
 }
+
+#content-container{
+    position: relative;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    padding: 0 2% 2% 2%;
+}
+
 *{
     box-sizing: border-box; 
     /* border: 1px solid red; */
@@ -67,5 +77,20 @@ html, body{
     display: block;
     font-size: .9rem;
     margin: 5px;
+}
+
+#nav{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+    margin-bottom: 12%;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, var(--light-accent-color), var(--light-accent2-color-op));
+    box-shadow: 5px 5px 5px var(--shadow-color);;
+}
+.nav-item, a{
+    color: #000;
+    text-decoration: none;
 }
 
